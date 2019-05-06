@@ -1,6 +1,7 @@
 body {  
     padding-top: 75px;
     padding-bottom: 75px;
+    color: #428bca;
 }
 header {
   margin: 1rem;
@@ -21,7 +22,7 @@ footer{
 
 /* Website */ 
 nav.navbar-dark a {
-    color: white;
+    color: white;       
 }
 label {
   font-weight: 700;  
@@ -33,4 +34,6 @@ nav.navbar-light a{
 .Pages {
   color: white
 }
-  
+.mb-5 {
+  padding-bottom: 75px;
+}
