@@ -18,30 +18,51 @@
     </nav>
 
 <Section class='container'>
-    <ul class='list-group'>
-        <li class='list-group-item'>
-            <a placeholder='Type Name Here'>Name</a>                
-        </l>    
-        <li class='list-group-item'>
-            <a >Text</a>
-            <!-- <a placeholder='Type Text Here' ></a> -->
-        </li> 
-        <li class='list-group-item'>
-            <a>Size</a>
-            <a placeholder='Type Size Here'></a>
-        </li>
-    </ul>
+        <form>
+            <!--form-group says how list should look, form-control makes list wider across page  -->
+            <div class='form-group'>
+                <label for='name'>Name</label>
+                    <input 
+                        id='name'
+                        name='name' 
+                        type='text'                        
+                        class='form-control'
+                        placeholder='Type Widget Name Here' 
+                    />              
+            <form>
+                <!--form-group says how list should look, form-control makes list wider across page  -->
+                <div class='form-group'>
+                    <label for='text'>Text</label>
+                        <input 
+                            id='text'
+                            name='text' 
+                            type='text'                        
+                            class='form-control'
+                            placeholder='Input Text Here' 
+                        />
+                </div>                
+                    <!--form-group says how list should look, form-control makes list wider across page  -->
+                    <div class='form-group'>
+                        <label for='size'>Size</label>
+                            <input 
+                                id='size'
+                                name='size' 
+                                type='number'                        
+                                class='form-control'
+                                placeholder='Type Size Here' 
+                            />
+                    </div>
 </Section>
 
-    <nav class="navbar navbar-dark bg-primary text-align-center">            
-        <!-- <span></span>    -->
-            <a href='widget-list.html text-align-center'>Delete</a>
-        <!-- <span></span> -->
-    </nav>
-    
-    <footer>
+                <!-- sends user back to widget-list -->
+                <a href="widget-list.html" class='btn btn-danger btn-block'>Delete</a>
 
-    </footer>
+                <!-- user icon shown in curriculum docs, but not listed flow chart -->
+                <nav class='navbar navbar-light bg-light fixed-bottom'>
+                    <a href='../user/profile.html'>
+                        <i class='fas fa-user'></i>
+                    </a>
+                </nav>
 
 </body>
 </html>
