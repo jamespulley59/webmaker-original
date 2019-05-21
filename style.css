@@ -37,3 +37,12 @@ nav.navbar-light a{
 .mb-5 {
   padding-bottom: 75px;
 }
+/* widgets */
+.icon-right{
+  position: absolute;
+  right: 15px;
+  z-index: 1;
+  background: white;
+  border-radius: 5px 0 0 5px;
+  padding: 5px;
+}
