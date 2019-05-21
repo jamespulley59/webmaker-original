@@ -1,66 +1,112 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel='stylesheet' href='../style.css'>
+    <title>widget image</title>
+</head>
+
+<body>    
+
 <div>
-    <nav className='navbar navbar-light bg-light fixed-top'>
+
+    <!-- has 3 item on top line so 1st floats left, 2nd goes to middle, 3rd goes left-->
+    <nav class='navbar navbar-light bg-primary fixed-top'>
         <a href='widget-list.html'>
-            <i className='fas fa-chevron-left'></i>
+            <i class='fas fa-chevron-left'></i>
         </a>
-        <span className='navbar-brand mb-0 h1'>Widget Edit</span>
+        <span class='navbar-brand mb-0 h1'>Widget Image</span>
         <a href='widget-list.html'>
-            <i className='fas fa-check'></i>
+            <i class='fas fa-check'></i>
         </a>
     </nav>
-    <div className='container'>
+
+    <!-- container holds all info -->
+    <div class='container'>
+        
         <form>
-            <div className='form-group'>
-                <label htmlFor='name'>Name</label>
-                <input placeholder=' Type Widget Name Here' id='name' name='name' type='text' className='form-control' />
+            <!--form-group says how list should look, form-control makes list wider across page  -->
+            <div class='form-group'>
+                <label for='name'>Name</label>
+                    <input 
+                        id='name'
+                        name='name' 
+                        type='text'                        
+                        class='form-control'
+                        placeholder='Type Widget Name Here' 
+                    />
             </div>
-            <div className='form-group'>
-                <label htmlFor='text'>Text</label>
-                <input placeholder=' Type Text Description Here (optional)' id='text' name='text' type='text' className='form-control' />
+            <div class='form-group'>
+                <label for='text'>Text</label>
+                    <input 
+                        id='text'
+                        name='text'
+                        type='text'
+                        class='form-control'
+                        placeholder='Type Text Description Here (optional)' 
+                    />
             </div>
-            <div className='form-group'>
-                <label htmlFor='url'>URL</label>
-                <input placeholder=' Type Image URL Here' id='url' name='url' type='text' className='form-control' />
+            <div class='form-group'>
+                <label for='url'>URL</label>
+                    <input 
+                        id='url'  
+                        name='url'
+                        type='text' 
+                        class='form-control' 
+                        placeholder="Type Image's URL Here" 
+                    />
             </div>
-            <div className='form-group'>
-                <label htmlFor='width'>Width</label>
-                    <div className="input-group">
-                        <input type="number" className="form-control" placeholder="Image Width" />
-                            <div className="input-group-append">
-                                <span className="input-group-width">%</span>
-                            </div>
-                    </div>
+            <!-- change image width -->
+            <div class='form-group'>
+                <label for='width'>Width</label>
+                    <input    
+                        type="range"
+                        list='tickmarks'
+                        class="form-control"                            
+                        placeholder="Adjust image width here"                            
+                    />
+                       <Datalist id='tickmarks'>
+                            <option value='0' label='0%'>
+                            <option value='10'>                        
+                            <option value='20'>
+                            <option value='30'>
+                            <option value='40'>
+                            <option value='50' label='50%'>                        
+                            <option value='60'>
+                            <option value='70'>
+                            <option value='80'>
+                            <option value='90'>
+                            <option value='100' label='100%'>
+                        </datalist>
             </div>
-            <div className='form-group'>
-                <label htmlFor='width'>Width</label>
-                <input placeholder=' Type Image URL Here' id='url' name='url' type='text' className='form-control' />
-                    <Datalist id='tickmarks' />
-                        <option value='0' label='0%' />
-                        <option value='10' />                        
-                        <option value='20' />
-                        <option value='30' />
-                        <option value='40' />
-                        <option value='50' label='50%' />                        
-                        <option value='60' />
-                        <option value='70' />
-                        <option value='80' />
-                        <option value='90' />
-                        <option value='100' label='100%' />                        
+            <div class='form-group'>
+                <label for='file'>File</label>
+                    <input 
+                        type='file'     
+                        id='file' 
+                        name='file' 
+                        class='form-control' 
+                    />
             </div>
-            <div className='form-group'>
-                <label htmlFor='file'>File</label>
-                <input type='file' id='file' name='file' className='form-control' />
-            </div>''
-            <a href='#' className='btn btn-primary btn-block'>Upload Image</a>
-            <a href='widget-list.html' className='btn btn-danger btn-block'>Delete</a>
+
+            <!-- buttons to add new images, delete old -->
+            <a href="#" class='btn btn-block btn-primary'>Upload Image</a>
+            <a href="widget-list.html" class='btn btn-block btn-danger'>Delete</a>   
+                      
         </form>
     </div>
-    <nav className='navbar navbar-light bg-light fixed-bottom'>
+
+    <!-- moves user back to their profile -->
+    <nav class='navbar navbar-light bg-light fixed-bottom'>
         <a href='../user/profile.html'>
-            <i className ='fas fa-user'></i>
+            <i class='fas fa-user'></i>
         </a>
     </nav>
-    </div>
-    )
-    }
-}
+   
+</body>
+</html>

@@ -14,7 +14,9 @@ footer{
   margin-bottom: 5px;
 }
 
-
+a, a:hover {
+  text-decoration: none;
+}
 
 .full-width {
   width:100%
@@ -29,7 +31,7 @@ label {
 }
 /* Pages */
 nav.navbar-light a{
-    color: #8d4343;
+    color:  black;
 }
 .Pages {
   color: white

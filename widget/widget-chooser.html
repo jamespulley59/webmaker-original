@@ -7,15 +7,53 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"> 
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.0/css/all.css" integrity="sha384-Mmxa0mLqhmOeaE8vgOSbKacftZcsNYDjQzuCOm6D02luYSzBG8vpaOykv9lFQ51Y" crossorigin="anonymous">
     <link rel='stylesheet' href='../style.css'>
-    <title>Choose Widget</title>
+    <title> Widget Chooser</title>
 </head>
 <body>
-    <nav class="navbar navbar-dark bg-primary fixed-top">
-        <a href='../user/profile.html'>
-    <i class="fas fa-chevron-left"></i>
+
+    <!-- top of page, title and back arrow -->
+    <nav class="navbar navbar-light bg-primary fixed-top">
+        <a href='widget-list.html'>
+            <i class="fas fa-chevron-left"></i>
         </a>
-            <span class="navbar-brand mb-0 h1">Choose Widgets</span><span></span>    
+            <span class="navbar-brand mb-0 h1">Choose Widget</span>
+            <!-- 1st item on line is chevron, 2nd is title because empty span is third  -->
+            <span></span>    
+    </nav>
     
-    </nav> 
+    <!-- all groupings need container -->
+    <div class='container'>
+        <!-- list group determines how list is shaped -->
+        <ul class="list-group ">
+            <!-- list-group-item is simply the things in your list,either 1 item or 10 -->
+            <li class='list-group-item'>
+               <a href="widget-heading.html">Header</a> 
+            </li>
+            <li class='list-group-item'>
+                <a href="">Label</a> 
+            </li>
+            <li class='list-group-item'>
+                <a href="">Html</a> 
+            </li>
+            <li class='list-group-item'>
+                <a href="">ata </a> 
+            </li>
+            <li class='list-group-item'>
+                <a href="">Button</a> 
+            </li>
+            <li class='list-group-item'>
+                <a href="widget-image.html">Image</a> 
+            </li>
+            <li class='list-group-item'>
+                <a href="widget-youtube.html">Youtube</a> 
+            </li>
+            <li class='list-group-item'>
+                <a href="">Data Table </a> 
+            </li>
+            <li class='list-group-item'>
+                <a href="">Repeater</a> 
+            </li>
+        </ul>
+    </div>
 </body>
 </html>
